@@ -1,0 +1,174 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This documentation describes bolierplate CRUD APIs",
+        "title": "Bolierplate CRUD API",
+        "contact": {},
+        "license": {}
+    },
+    "paths": {
+        "/memos": {
+            "get": {
+                "description": "Get all memos",
+                "tags": [
+                    "Memo"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "memoID",
+                        "name": "memoID",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.Memos"
+                            }
+                        }
+                    },
+                    "404": {},
+                    "500": {}
+                }
+            }
+        },
+        "/memos/:memoID": {
+            "get": {
+                "description": "Get memo by memoID",
+                "tags": [
+                    "Memo"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "memoID",
+                        "name": "memoID",
+                        "in": "query",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.Memos"
+                        }
+                    },
+                    "404": {},
+                    "500": {}
+                }
+            },
+            "post": {
+                "description": "Create memo",
+                "tags": [
+                    "Memo"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "memoID",
+                        "name": "memoID",
+                        "in": "query"
+                    },
+                    {
+                        "description": "create memo",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/requests.CreateMemo"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/responses.Message"
+                        }
+                    },
+                    "404": {},
+                    "500": {}
+                }
+            },
+            "delete": {
+                "description": "Update memo",
+                "tags": [
+                    "Memo"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "memoID",
+                        "name": "memoID",
+                        "in": "query"
+                    },
+                    {
+                        "description": "update memo",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/requests.UpdateMemo"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/responses.Message"
+                        }
+                    },
+                    "404": {},
+                    "500": {}
+                }
+            }
+        }
+    },
+    "definitions": {
+        "models.Memos": {
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "string"
+                },
+                "createAt": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "requests.CreateMemo": {
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "string"
+                }
+            }
+        },
+        "requests.UpdateMemo": {
+            "type": "object",
+            "properties": {
+                "content": {
+                    "type": "string"
+                }
+            }
+        },
+        "responses.Message": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

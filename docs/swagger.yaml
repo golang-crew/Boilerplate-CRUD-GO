@@ -1,0 +1,114 @@
+definitions:
+  models.Memos:
+    properties:
+      content:
+        type: string
+      createAt:
+        type: string
+      id:
+        type: integer
+    type: object
+  requests.CreateMemo:
+    properties:
+      content:
+        type: string
+    type: object
+  requests.UpdateMemo:
+    properties:
+      content:
+        type: string
+    type: object
+  responses.Message:
+    properties:
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+  description: This documentation describes bolierplate CRUD APIs
+  license: {}
+  title: Bolierplate CRUD API
+paths:
+  /memos:
+    get:
+      description: Get all memos
+      parameters:
+      - description: memoID
+        in: query
+        name: memoID
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Memos'
+            type: array
+        "404": {}
+        "500": {}
+      tags:
+      - Memo
+  /memos/:memoID:
+    delete:
+      description: Update memo
+      parameters:
+      - description: memoID
+        in: query
+        name: memoID
+        type: string
+      - description: update memo
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/requests.UpdateMemo'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/responses.Message'
+        "404": {}
+        "500": {}
+      tags:
+      - Memo
+    get:
+      description: Get memo by memoID
+      parameters:
+      - description: memoID
+        in: query
+        name: memoID
+        required: true
+        type: string
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Memos'
+        "404": {}
+        "500": {}
+      tags:
+      - Memo
+    post:
+      description: Create memo
+      parameters:
+      - description: memoID
+        in: query
+        name: memoID
+        type: string
+      - description: create memo
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/requests.CreateMemo'
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/responses.Message'
+        "404": {}
+        "500": {}
+      tags:
+      - Memo
+swagger: "2.0"
