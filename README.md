@@ -4,6 +4,7 @@
 
 [![author](https://img.shields.io/badge/author-covenant-brightgreen.svg?style=flat-square)](https://covenant.tistory.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/brave-people/Dev-Event/pulls)
+[![Build Status](https://travis-ci.org/KoEonYack/Boilerplate-CRUD-GO.svg?branch=master)](https://travis-ci.org/KoEonYack/Boilerplate-CRUD-GO)
 <!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fgyoogle%2Ftech-interview-for-developer.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fgyoogle%2Ftech-interview-for-developer?ref=badge_shield) -->
 
 당신이 Go 프로젝트를 빠르게 시작할수 있도록 도와줄께요!
