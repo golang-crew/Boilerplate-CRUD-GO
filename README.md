@@ -3,7 +3,8 @@
 # Backend Boilerplate with GO (Gin-gonic)
 
 [![author](https://img.shields.io/badge/author-covenant-brightgreen.svg?style=flat-square)](https://covenant.tistory.com/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/brave-people/Dev-Event/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/golang-crew/Boilerplate-CRUD-GO/pulls)
+[![Build Status](https://travis-ci.org/golang-crew/Boilerplate-CRUD-GO.svg?branch=master)](https://travis-ci.org/golang-crew/Boilerplate-CRUD-GO)
 [![Go Report Card](https://goreportcard.com/badge/github.com/GoAdminGroup/go-admin)](https://goreportcard.com/report/github.com/GoAdminGroup/go-admin)
 <!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fgyoogle%2Ftech-interview-for-developer.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fgyoogle%2Ftech-interview-for-developer?ref=badge_shield) -->
 
