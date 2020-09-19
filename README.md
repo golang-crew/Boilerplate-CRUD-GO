@@ -4,6 +4,7 @@
 
 [![author](https://img.shields.io/badge/author-covenant-brightgreen.svg?style=flat-square)](https://covenant.tistory.com/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/brave-people/Dev-Event/pulls)
+[![Go Report Card](https://goreportcard.com/badge/github.com/GoAdminGroup/go-admin)](https://goreportcard.com/report/github.com/GoAdminGroup/go-admin)
 <!-- [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fgyoogle%2Ftech-interview-for-developer.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fgyoogle%2Ftech-interview-for-developer?ref=badge_shield) -->
 
 당신이 Go 프로젝트를 빠르게 시작할수 있도록 도와줄께요!
@@ -64,10 +65,10 @@ goqueryset -in {fileName}
 $ cd workspace
 
 # Clone into YOUR $GOPATH/src
-$ git clone https://github.com/bxcodec/go-clean-arch.git
+$ git clone https://github.com/KoEonYack/Boilerplate-CRUD-GO.git
 
 # Docker compose 
-$ docker-compuse up -d
+$ docker-compose up -d
 ```
 
 
@@ -77,10 +78,10 @@ $ go run main.go
 
 # Run Case 2 
 # Docker build
-$ docker build . -t bolierplate-crud  
+$ docker build . -t boilerplate-crud  
 
 # Docker run
-$ docker run -p 8080:8080 bolierplate-crud
+$ docker run -p 8080:8080 boilerplate-crud
 ```
 
 ## 📄 Reference
